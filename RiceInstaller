@@ -169,7 +169,7 @@ fi
 
 logo "Downloading dotfiles"
 
-repo_url="https://github.com/gh0stzk/dotfiles"
+repo_url="git@github.com:Violeeeeeeee/dotfiles.git"
 repo_dir="$HOME/dotfiles"
 
 # Verifies if the folder of the repository exists, and if it does, deletes it
@@ -180,9 +180,9 @@ fi
 
 # Clone the repository
 printf "Cloning dotfiles from %s\n" "$repo_url"
-git clone --depth=1 "$repo_url" "$repo_dir"
-sleep 2
-clear
+git clone "$repo_url" "$repo_dir"
+#sleep 2
+#clear
 
 ########## ---------- Backup files ---------- ##########
 
